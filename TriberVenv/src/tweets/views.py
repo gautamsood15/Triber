@@ -1,9 +1,9 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import DetailView, ListView, CreateView
+from django.views.generic import DetailView, ListView, CreateView, UpdateView
 
 from .forms import TweetModelForm
-from .mixins import FormUserNeededMixin
+from .mixins import FormUserNeededMixin, UserOwnerMixin
 from .models import Tweet
 
 
@@ -13,12 +13,21 @@ from .models import Tweet
 
 # CRUD List/Search
 
-class TweetCreateView(LoginRequiredMixin, FormUserNeededMixin, CreateView):
+class TweetCreateView(FormUserNeededMixin, CreateView):
 	form_class = TweetModelForm
 	template_name = 'tweets/create_view.html'
 	success_url = "/tweet/create"
-	login_url = '/admin/'
+	#login_url = '/admin/'
 	
+
+
+class TweetUpdateView(UserOwnerMixin, UpdateView):
+	queryset = Tweet.objects.all()
+	form_class = TweetModelForm
+	template_name = 'tweets/update_view.html'
+	success_url = "/tweet/"
+
+
 
 	#def form_valid(self, form):
 	#	if self.request.user.is_authenticated():
