@@ -1,0 +1,7 @@
+{% for object in object_list %}
+	{{ object.content }}<br/>
+	{{ object.user }}<br/>
+	{{ object.timestamp|timesince }} ago<br/><br/><br/>
+{% empty %}
+	<p>No Tweets yet. </p>
+{% endfor %}
