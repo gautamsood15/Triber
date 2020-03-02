@@ -206,6 +206,12 @@
 		"whole_word": false,
 		"wrap": true
 	},
+	"folders":
+	[
+		{
+			"path": "src"
+		}
+	],
 	"groups":
 	[
 		{
