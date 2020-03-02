@@ -4,33 +4,38 @@
 
 
 <div class='row'>
-	<div class='col-sm-8 col-sm-offset-2'>
+	<div class='col-sm-3 col-xs-12' style='background-color: blue;'>
+			<h1>{{ request.user }}</h1>		
+	</div>
 
-	{% for object in object_list %}
-		<div class="media">
-			<div class="media-left">
-				<a href="#">
-					{% if object.image %}
-						<img class="media-object" src="..." alt="...">
-					{% endif %}
+		<div class='col-sm-9'>
 
-				</a>
+		{% for object in object_list %}
+			<div class="media">
+				<div class="media-left">
+					<a href="#">
+						{% if object.image %}
+							<img class="media-object" src="..." alt="...">
+						{% endif %}
+
+					</a>
+				</div>
+				<div class="media-body">
+					{{ object.content }}<br/>
+					via {{ object.user }} | {{ object.timestamp|timesince }} ago | <a href='{{ object.get_absolute_url }}'>View</a>
+				</div>
 			</div>
-			<div class="media-body">
-				{{ object.content }}<br/>
-				via {{ object.user }} | {{ object.timestamp|timesince }} ago | <a href='{{ object.get_absolute_url }}'>View</a>
-			</div>
+			<hr/>
+		{% empty %}
+			{% if request.GET.q %}
+			<p>No tweets Found</p>
+			{% else %}
+			<p>No Tweets yet. </p>
+			{% endif %}
+		{% endfor %}
+			
 		</div>
-		<hr/>
-	{% empty %}
-		{% if request.GET.q %}
-		<p>No tweets Found</p>
-		{% else %}
-		<p>No Tweets yet. </p>
-		{% endif %}
-	{% endfor %}
 		
 	</div>
-</div>
 
 {% endblock content %}
