@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+
 {% include "tweets/search_form.html" %}<br/><br/><br/>
 {% for object in object_list %}
 	{{ object.content }}<br/>
@@ -10,3 +13,5 @@
 	<p>No Tweets yet. </p>
 	{% endif %}
 {% endfor %}
+
+{% endblock content %}
