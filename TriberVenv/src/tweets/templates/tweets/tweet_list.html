@@ -1,4 +1,44 @@
 {% extends "base.html" %}
+
+<style>
+	#tweet-container{
+
+
+	}
+
+</style>
+
+{% block script %}
+
+<script>
+
+		$.ajax({
+			url:"/api/tweet/",
+			method:"GET",
+			success:function(data){
+				//console.log(data)
+				$.each(data, function(key, value){
+					var tweetKey = key
+					var tweetContent = value.content
+					var tweetUser = value.user
+					$("#tweet-container").append(
+						"<div class=\"media\"><div class=\"media-body\">" + tweetContent + "<br/> via  " + tweetUser.username + " | " + "<a href='#'>View</a>" + "</div></div><hr/>"
+						)
+				})
+			},
+			error: function(data){
+				console.log("error")
+				console.log(data)
+			}
+		})
+
+</script>
+
+{% endblock script %}
+
+
+
+
 {% block content %}
 
 
@@ -15,12 +55,17 @@
 	</div>
 	<hr/>
 	{% endif %}
+
+		<div id='tweet-container'>
+			
+
+
+		</div>
 		{% for object in object_list %}
 			<div class="media">
 				<div class="media-left">
 					<a href="#">
 						{% if object.image %}
-							<img class="media-object" src="..." alt="...">
 						{% endif %}
 
 					</a>
@@ -29,7 +74,7 @@
 					{{ object.content }}<br/>
 					via {{ object.user }} | {{ object.timestamp|timesince }} ago | <a href='{{ object.get_absolute_url }}'>View</a>
 				</div>
-			</div>
+			</div>   
 			<hr/>
 		{% empty %}
 			{% if request.GET.q %}
