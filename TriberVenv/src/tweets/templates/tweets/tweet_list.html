@@ -41,10 +41,11 @@ $(document).ready(function(){
 		else {
 			$.each(tweetList, function(key, value){
 				var tweetKey = key
+				var dateDisplay = value.date_display
 				var tweetContent = value.content
 				var tweetUser = value.user
 				$("#tweet-container").append(
-					"<div class=\"media\"><div class=\"media-body\">" + tweetContent + "<br/> via  " + tweetUser.username + " | " + "<a href='#'>View</a>" + "</div></div><hr/>"
+					"<div class=\"media\"><div class=\"media-body\">" + tweetContent + "<br/> via  " + tweetUser.username + " | " + dateDisplay + " | " + "<a href='#'>View</a>" + "</div></div><hr/>"
 				)
 			})
 }}
@@ -98,7 +99,7 @@ $(document).ready(function(){
 	})
 
 
-		//fetchTweets()
+		fetchTweets()
 	})
 })
 
