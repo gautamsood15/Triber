@@ -27,5 +27,5 @@ class Tweet(models.Model):
 	#	return super(Tweet, self).clean(*args, **kwargs)
 
 
-	#class Meta:
-	#	ordering = ['-timestamp', 'content']
+	class Meta:
+		ordering = ['-timestamp']
