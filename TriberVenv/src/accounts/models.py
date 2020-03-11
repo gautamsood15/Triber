@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.urls import reverse_lazy
 
 # Create your models here.
 
@@ -17,6 +18,28 @@ class UserProfileManager(models.Manager):
 		return qs
 
 
+	def toggle_follow(self, user, to_toggle_user):
+		user_profile, created = UserProfile.objects.get_or_create(user=user)			
+		if to_toggle_user in user_profile.following.all():
+			user_profile.following.remove(to_toggle_user)
+			added = False
+		else:
+			user_profile.following.add(to_toggle_user)
+			added = True
+		return added
+
+	def is_following(self, user, followed_by_user):
+		user_profile, created = UserProfile.objects.get_or_create(user=user)
+		if created:
+			return False
+		if followed_by_user in user_profile.following.all():
+			return True
+		return False
+
+
+
+
+
 
 
 class UserProfile(models.Model):
@@ -27,7 +50,7 @@ class UserProfile(models.Model):
 	# user.followed_by -- users that follow me --- reverse relationship
 
 
-	objects = UserProfileManager # UserProfile.objects.all()
+	objects = UserProfileManager() # UserProfile.objects.all()
 	# shivu = UserProfileManager # UserProfile.shivu.all()
 
 	def __str__(self):
@@ -37,3 +60,10 @@ class UserProfile(models.Model):
 	def get_following(self):
 		users = self.following.all()  # User.objects.all().exclude(username=self.user.username)
 		return users.exclude(username=self.user.username)
+
+
+	def get_follow_url(self):
+		return reverse_lazy("profiles:follow", kwargs={"username":self.user.username})
+
+	def get_absolute_url(self):
+		return reverse_lazy("profiles:detail", kwargs={"username":self.user.username})
