@@ -84,9 +84,11 @@ function loadTweetContainer(tweetContainerID){
       success: function (data) {
         console.log(data)
         // if username is in the API path ... let's ignore
+        if (initialURL == "/api/tweet/"){
+          attachTweet(data, true, true)
+          updateHashLinks()
+        }
 
-        attachTweet(data, true, true)
-        updateHashLinks()
 
       },
       error: function (data) {

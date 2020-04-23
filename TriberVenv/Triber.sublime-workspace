@@ -4,12 +4,192 @@
 		"selected_items":
 		[
 			[
-				"U",
-				"UserOwnerMixin"
+				"tweet",
+				"tweet-container"
+			],
+			[
+				"hash",
+				"hashtag_list"
+			],
+			[
+				"pa",
+				"parsed_hashtags_receiver"
+			],
+			[
+				"par",
+				"pasrsed_hashtags"
+			],
+			[
+				"new",
+				"newText"
+			],
+			[
+				"user",
+				"usernameRegex"
+			],
+			[
+				"o",
+				"og_parent"
+			],
+			[
+				"date",
+				"dateDisplay"
+			],
+			[
+				"get_",
+				"get_object_or_404"
+			],
+			[
+				"parent",
+				"parent"
+			],
+			[
+				"is",
+				"isRetweet"
+			],
+			[
+				"twee",
+				"tweet"
 			],
 			[
 				"Tweet",
-				"Tweet"
+				"TweetManager"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"follow",
+				"follow"
+			],
+			[
+				"is_",
+				"is_following"
+			],
+			[
+				"User",
+				"UserDetailView"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"toggle",
+				"toggle_user"
+			],
+			[
+				"fo",
+				"following"
+			],
+			[
+				"get",
+				"get_object_or_404"
+			],
+			[
+				"load",
+				"loadmore"
+			],
+			[
+				"next",
+				"nexttweetUrl"
+			],
+			[
+				"url",
+				"url"
+			],
+			[
+				"search",
+				"searchQuery"
+			],
+			[
+				"ty",
+				"typingTimer"
+			],
+			[
+				"sear",
+				"searchQuery"
+			],
+			[
+				"cha",
+				"charsStart"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"grey",
+				"grey-color"
+			],
+			[
+				"red",
+				"red-color"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"span",
+				"spanChars"
+			],
+			[
+				"chars",
+				"charsCurrent"
+			],
+			[
+				"char",
+				"charsCurrent"
+			],
+			[
+				"tweetC",
+				"tweetCharsLeft"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"for",
+				"formData"
+			],
+			[
+				"t",
+				"tweetList"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"rever",
+				"reverse_lazy"
+			],
+			[
+				"T",
+				"TweetListView"
+			],
+			[
+				"navbar",
+				"navbar-nav"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"U",
+				"UserOwnerMixin"
 			],
 			[
 				"form",
@@ -62,42 +242,55 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/root/Desktop/Triber/TriberVenv/src",
-		"/root/Desktop/Triber/TriberVenv/src/Triber",
-		"/root/Desktop/Triber/TriberVenv/src/Triber/settings",
-		"/root/Desktop/Triber/TriberVenv/src/tweets",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets"
-	],
 	"file_history":
 	[
-		"/root/Desktop/Triber/TriberVenv/src/tweets/models.py",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/mixins.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/api/views.py",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/api/urls.py",
 		"/root/Desktop/Triber/TriberVenv/src/Triber/urls.py",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/templates/accounts/user_detail.html",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/urls.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/api/urls.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/urls.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/api/serializers.py",
+		"/root/Desktop/Triber/TriberVenv/src/templates/base.html",
 		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/tweet_list.html",
 		"/root/Desktop/Triber/TriberVenv/src/tweets/views.py",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/urls.py",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/search_form.html",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/admin.py",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/forms.py",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/validators.py",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/delete_confirm.html",
-		"/root/Desktop/Triber/TriberVenv/src/Triber/views.py",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/update_view.html",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/create_view.html",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/form.html",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/list_view.html",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/tweet_detail.html",
-		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/detail_view.html",
+		"/root/Desktop/Triber/TriberVenv/src/hashtags/signals.py",
+		"/root/Desktop/Triber/TriberVenv/src/hashtags/models.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/models.py",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/models.py",
+		"/root/Desktop/Triber/TriberVenv/src/hashtags/views.py",
+		"/root/Desktop/Triber/TriberVenv/src/hashtags/admin.py",
+		"/root/Desktop/Triber/TriberVenv/src/hashtags/templates/hashtags/tag_view.html",
+		"/root/Desktop/Triber/TriberVenv/src/Triber/settings/base.py",
 		"/root/Desktop/Triber/TriberVenv/src/Triber/settings/local.py",
+		"/root/Desktop/Triber/TriberVenv/src/Triber/settings/production.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/admin.py",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/views.py",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/admin.py",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/tests.py",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/api/serializers.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/tweet_detail.html",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/delete_confirm.html",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/create_view.html",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/search_form.html",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/api/pagination.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/form.html",
+		"/root/Desktop/Triber/TriberVenv/src/Triber/views.py",
+		"/root/Desktop/Triber/TriberVenv/src/accounts/api/__init__.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/api/__init__.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/tests.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/forms.py",
+		"/root/Desktop/Triber/TriberVenv/src/templates/navbar.html",
 		"/root/Desktop/Triber/TriberVenv/src/templates/home.html",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/detail_view.html",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/validators.py",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/list_view.html",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/templates/tweets/update_view.html",
+		"/root/Desktop/Triber/TriberVenv/src/tweets/mixins.py",
 		"/root/Desktop/Triber/TriberVenv/src/static-storage/static/css/custom.css",
 		"/root/Desktop/Triber/TriberVenv/src/Triber/settings/__init__.py",
 		"/root/Desktop/Triber/TriberVenv/src/Triber/__init__.py",
-		"/root/Desktop/Triber/TriberVenv/src/Triber/settings/production.py",
-		"/root/Desktop/Triber/TriberVenv/src/Triber/settings/base.py",
 		"/root/Desktop/Triber/TriberVenv/src/Triber/settings.py",
 		"/root/Desktop/Triber/TriberVenv/bin/activate_this.py",
 		"/root/Desktop/Triber/TriberVenv/lib/python3.6/site-packages/django/core/management/commands/makemessages.py",
@@ -105,7 +298,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -119,6 +312,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"nextTweetUrl"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -133,12 +327,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"path": "."
-		}
-	],
 	"groups":
 	[
 		{
@@ -149,11 +337,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 24.0
 	},
 	"input":
 	{
-		"height": 36.0
+		"height": 40.0
 	},
 	"layout":
 	{
@@ -186,7 +374,7 @@
 	"project": "Triber.sublime-workspace",
 	"replace":
 	{
-		"height": 0.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -224,7 +412,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 250.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
